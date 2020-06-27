@@ -135,8 +135,10 @@ def load_sidebar(user, linktype):
     logger.info('load sidebar')
     from DjangoBlog.utils import get_blog_setting
     blogsetting = get_blog_setting()
+    "最近发表的文章"
     recent_articles = Article.objects.filter(
         status='p')[:blogsetting.sidebar_article_count]
+    "分类目录"
     sidebar_categorys = Category.objects.all()
     extra_sidebars = SideBar.objects.filter(
         is_enable=True).order_by('sequence')

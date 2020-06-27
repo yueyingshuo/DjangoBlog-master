@@ -8,7 +8,9 @@
 [![Build Status](https://travis-ci.org/liangliangyy/DjangoBlog.svg?branch=master)](https://travis-ci.org/liangliangyy/DjangoBlog) [![codecov](https://codecov.io/gh/liangliangyy/DjangoBlog/branch/master/graph/badge.svg)](https://codecov.io/gh/liangliangyy/DjangoBlog) [![Requirements Status](https://requires.io/github/liangliangyy/DjangoBlog/requirements.svg?branch=master)](https://requires.io/github/liangliangyy/DjangoBlog/requirements/?branch=master)  [![license](https://img.shields.io/github/license/liangliangyy/djangoblog.svg)]()  
 
 ## 主要功能：
-- 文章，页面，分类目录，标签的添加，删除，编辑等。文章及页面支持`Markdown`，支持代码高亮。
+- 文章，页面，
+
+分类目录，标签的添加，删除，编辑等。文章及页面支持`Markdown`，支持代码高亮。
 - 支持文章全文搜索。
 - 完整的评论功能，包括发表回复评论，以及评论的邮件提醒，支持`Markdown`。
 - 侧边栏功能，最新文章，最多阅读，标签云等。

@@ -56,8 +56,48 @@ class BaseModel(models.Model):
         pass
 
 
+'''
+
+class Book(models.Model):
+    """书籍"""
+    STATUS_CHOICES = (
+        ('d', '草稿'),
+        ('p', '发表'),
+    )
+    book_name = models.CharField(max_length=20, verbose_name='名称')
+    bpub_date = models.DateField(verbose_name='发布日期', null=True)
+    copyright = models.IntegerField(default=0, verbose_name='版权归属机构')
+    status = models.CharField(
+        '文章状态',
+        max_length=1,
+        choices=STATUS_CHOICES,
+        default='p')
+
+
+
+class Chapter(models.Model):
+    """书籍中的章节"""
+
+    STATUS_CHOICES = (
+        ('d', '草稿'),
+        ('p', '发表'),
+    )
+    chapter_name = models.CharField(max_length=20, verbose_name='章节名称')
+    book_id = models.ForeignKey(
+        'Book',
+        verbose_name='书籍ID',
+        on_delete=models.CASCADE,
+        blank=False,
+        null=False)
+    status = models.CharField(
+        '文章状态',
+        max_length=1,
+        choices=STATUS_CHOICES,
+        default='p')
+
+'''
 class Article(BaseModel):
-    """文章"""
+
     STATUS_CHOICES = (
         ('d', '草稿'),
         ('p', '发表'),
@@ -70,6 +110,14 @@ class Article(BaseModel):
         ('a', '文章'),
         ('p', '页面'),
     )
+    '''
+    chapter_id = models.ForeignKey(
+        'Chapter',
+        verbose_name='章节ID',
+        on_delete=models.CASCADE,
+        blank=False,
+        null=False)
+        '''
     title = models.CharField('标题', max_length=200, unique=True)
     body = MDTextField('正文')
     pub_time = models.DateTimeField(
