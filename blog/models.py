@@ -56,7 +56,7 @@ class BaseModel(models.Model):
         pass
 
 
-'''
+
 
 class Book(models.Model):
     """书籍"""
@@ -83,7 +83,7 @@ class Chapter(models.Model):
         ('p', '发表'),
     )
     chapter_name = models.CharField(max_length=20, verbose_name='章节名称')
-    book_id = models.ForeignKey(
+    book= models.ForeignKey(
         'Book',
         verbose_name='书籍ID',
         on_delete=models.CASCADE,
@@ -95,7 +95,7 @@ class Chapter(models.Model):
         choices=STATUS_CHOICES,
         default='p')
 
-'''
+
 class Article(BaseModel):
 
     STATUS_CHOICES = (
@@ -110,14 +110,14 @@ class Article(BaseModel):
         ('a', '文章'),
         ('p', '页面'),
     )
-    '''
-    chapter_id = models.ForeignKey(
+
+    chapter = models.ForeignKey(
         'Chapter',
         verbose_name='章节ID',
         on_delete=models.CASCADE,
         blank=False,
-        null=False)
-        '''
+        default='1')
+
     title = models.CharField('标题', max_length=200, unique=True)
     body = MDTextField('正文')
     pub_time = models.DateTimeField(

@@ -485,7 +485,7 @@ html {
 
 body {
     font-size: 14px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: Helvetica, Arial, sans-serif;
     text-rendering: optimizeLegibility;
     color: #444;
@@ -548,7 +548,6 @@ a:hover {
 }
 
 .widget-area {
-    float:left;
     margin: 24px 0 0;
     margin: 1.714285714rem 0 0;
 }
@@ -608,7 +607,7 @@ a:hover {
     margin-top: 24px;
     margin-top: 1.714285714rem;
     font-size: 12px;
-    font-size: 1.257142857rem;
+    font-size: 0.857142857rem;
     line-height: 1.42857143;
 }
 
@@ -645,7 +644,6 @@ section[role="banner"] {
     margin-bottom: 48px;
     margin-bottom: 3.428571429rem;
     word-wrap: break-word;
-    float:left;
 }
 
 .widget-area .widget h3 {
@@ -657,7 +655,7 @@ section[role="banner"] {
 .widget-area .widget li,
 .widget-area .widget .textwidget {
     font-size: 13px;
-    font-size: 1.128571429rem;
+    font-size: 0.928571429rem;
     line-height: 1.846153846;
 }
 
@@ -1658,7 +1656,7 @@ img#wpstats {
     }
 
     .site-content {
-        float: right;
+        float: left;
         width: 65.104166667%;
     }
 
@@ -1669,7 +1667,7 @@ img#wpstats {
     }
 
     .widget-area {
-        float: left;
+        float: right;
         width: 26.041666667%;
     }
 
@@ -1708,7 +1706,7 @@ img#wpstats {
     .main-navigation li a {
         border-bottom: 0;
         color: #6a6a6a;
-        line-height: 4.692307692;
+        line-height: 3.692307692;
         text-transform: uppercase;
         white-space: nowrap;
     }
@@ -1756,7 +1754,7 @@ img#wpstats {
         border-bottom: 1px solid #ededed;
         display: block;
         font-size: 11px;
-        font-size: 1.25714286rem;
+        font-size: 0.785714286rem;
         line-height: 2.181818182;
         padding: 8px 10px;
         padding: 0.571428571rem 0.714285714rem;

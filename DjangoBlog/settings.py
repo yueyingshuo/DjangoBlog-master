@@ -105,7 +105,7 @@ WSGI_APPLICATION = 'DjangoBlog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangoblog',
+        'NAME': 'myproject',
         'USER': 'root',
         'PASSWORD': '2015shanghai',
         'HOST': '127.0.0.1',
@@ -169,6 +169,7 @@ LOGIN_URL = '/login/'
 
 TIME_FORMAT = '%Y-%m-%d %H:%M:%S'
 DATE_TIME_FORMAT = '%Y-%m-%d'
+
 
 # bootstrap color styles
 BOOTSTRAP_COLOR_TYPES = [

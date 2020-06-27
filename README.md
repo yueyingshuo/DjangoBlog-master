@@ -80,7 +80,7 @@ CREATE DATABASE `djangoblog` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8
 ```bash
 ./manage.py makemigrations
 ./manage.py migrate
-```
+`
 
 **注意：** 在使用 `./manage.py` 之前需要确定你系统中的 `python` 命令是指向 `python 3.6` 及以上版本的。如果不是如此，请使用以下两种方式中的一种：
 
