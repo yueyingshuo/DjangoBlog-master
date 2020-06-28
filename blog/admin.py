@@ -68,11 +68,13 @@ class ArticlelAdmin(admin.ModelAdmin):
         'views',
         'status',
         'type',
-        'article_order')
+        'article_order',
+        #edit
+    )
     list_display_links = ('id', 'title')
     list_filter = (ArticleListFilter, 'status', 'type', 'category', 'tags')
     filter_horizontal = ('tags',)
-    exclude = ('created_time', 'last_mod_time')
+    exclude = ('created_time', 'last_mod_time','chapter')
     view_on_site = True
     actions = [
         makr_article_publish,

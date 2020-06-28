@@ -146,7 +146,7 @@ class CategoryDetailView(ArticleListView):
     分类目录列表
     '''
     page_type = "分类目录归档"
-
+    '''点击名字查询那个分类下的所有的文章'''
     def get_queryset_data(self):
         slug = self.kwargs['category_name']
         category = get_object_or_404(Category, slug=slug)
@@ -155,6 +155,8 @@ class CategoryDetailView(ArticleListView):
         self.categoryname = categoryname
         categorynames = list(
             map(lambda c: c.name, category.get_sub_categorys()))
+        print("**************************")
+        print(categorynames)
         article_list = Article.objects.filter(
             category__name__in=categorynames, status='p')
         return article_list

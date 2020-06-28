@@ -19,7 +19,7 @@ class AccountTest(TestCase):
     def test_validate_account(self):
         site = get_current_site().domain
         user = BlogUser.objects.create_superuser(
-            email="liangliangyy1@gmail.com",
+            email="daomiaosong@126.com",
             username="liangliangyy1",
             password="qwer!@#$ggg")
         testuser = BlogUser.objects.get(username='liangliangyy1')

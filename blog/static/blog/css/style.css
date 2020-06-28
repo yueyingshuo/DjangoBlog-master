@@ -1656,7 +1656,7 @@ img#wpstats {
     }
 
     .site-content {
-        float: left;
+        float: right;
         width: 65.104166667%;
     }
 
@@ -1667,7 +1667,7 @@ img#wpstats {
     }
 
     .widget-area {
-        float: right;
+        float: left;
         width: 26.041666667%;
     }
 
